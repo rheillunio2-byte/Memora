@@ -7,13 +7,17 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Cancel an older run of the same branch when a newer commit arrives.
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
   contents: read
+
+# The project lives in the MEMORA/ subfolder (match its exact capitalization).
+defaults:
+  run:
+    working-directory: MEMORA
 
 jobs:
   test-and-build:
@@ -29,6 +33,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Show project files
+        run: ls -la
 
       - name: Set up Node.js ${{ matrix.node }}
         uses: actions/setup-node@v4
@@ -49,6 +56,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: memora-dist
-          path: dist
+          path: MEMORA/dist
           if-no-files-found: error
           retention-days: 7
