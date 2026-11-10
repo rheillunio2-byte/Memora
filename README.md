@@ -1,19 +1,36 @@
 <div align="center">
 
-# ◈ MEMORA
+<!-- ANIMATED HEADER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&height=240&color=0:0B0C10,50:6D63E8,100:58D6DF&text=MEMORA&fontColor=ECECF4&fontSize=64&fontAlignY=38&desc=Learn%20smarter.%20Remember%20longer.&descAlignY=58&descSize=18&animation=twinkling" width="100%" alt="MEMORA banner" />
 
-### Your knowledge. Your memory. Your mastery.
-
-**An AI-powered learning, reviewer, and examination platform.**
-
-A premium study workspace that transforms class notes, documents, and topic prompts into structured reviewers, flashcards, and practice examinations.
+<!-- ANIMATED TYPING -->
+<img src="https://readme-typing-svg.demolab.com?font=Manrope&weight=600&size=22&duration=3200&pause=900&color=B4ABFF&center=true&vCenter=true&width=760&lines=Turn+any+material+into+a+study+set.;Flashcards+that+know+when+to+come+back.;Practice+tests+that+teach+you+something.;Your+AI-powered+learning+companion." alt="Animated typing introduction" />
 
 <br/>
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat-square&logo=vite&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-58D6DF?style=flat-square)
+**An AI-powered learning platform that turns your notes, slides, and documents into reviewers, flashcards, and practice exams, then keeps you on schedule with spaced repetition.**
+
+<br/>
+
+[![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.7-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev)
+[![Express](https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white)](https://expressjs.com)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-11-8B7CF6?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![Gemini](https://img.shields.io/badge/Google-Gemini-4285F4?style=for-the-badge&logo=googlegemini&logoColor=white)](https://ai.google.dev)
+[![License](https://img.shields.io/badge/License-MIT-58D6DF?style=for-the-badge)](https://github.com/rheillunio2-byte/Memora?tab=MIT-1-ov-file)
+[![Status](https://img.shields.io/badge/Status-Prototype-6D63E8?style=for-the-badge)](#-known-limitations)
+
+<br/>
+
+[Overview](#-overview) •
+[Preview](#-application-preview) •
+[Features](#-features) •
+[Tech Stack](#-tech-stack) •
+[How It Works](#-how-it-works) •
+[Getting Started](#-getting-started) •
+[Contributing](#-contributing) •
+[License](#-license)
 
 </div>
 
@@ -21,116 +38,189 @@ A premium study workspace that transforms class notes, documents, and topic prom
 
 ## ✦ Overview
 
-MEMORA is a student-focused learning platform built around one continuous workflow:
+**MEMORA** helps students study with intention. Bring a PDF, Word document, slide deck, plain notes, or just a topic, and MEMORA builds a complete study set from it: a structured **reviewer**, key **terms**, **flashcards**, and a **practice exam**.
 
-**Upload or prompt → Understand → Organize → Generate → Study → Test → Improve**
+From there, the platform keeps the learning loop going. Flashcards are scheduled with spaced repetition, exam mistakes are collected in a notebook, and a progress dashboard shows where to focus next.
 
-The application includes a working local-first study workspace, document text extraction, server-side Gemini integration, interactive flashcards, practice examinations, spaced repetition, mistake tracking, and activity-based learning insights.
+> **UNDERSTAND. PRACTICE. REMEMBER. MASTER.**
 
-## ✧ Screenshots
+### ✨ Why MEMORA?
 
-> Add your screenshots to `images/` and update the paths below.
+- **Source-grounded.** Study material is generated from *your* documents, not generic content.
+- **One workspace.** Reviewer, flashcards, tests, review schedule, and analytics live together.
+- **Honest data.** Every statistic comes from your real activity. There are no fake numbers or sample users.
+- **Private by default.** Your workspace is stored in your own browser, and the AI key stays on the server.
+
+---
+
+## 📸 Application Preview
 
 <div align="center">
 
-| Workspace | Reviewer |
-|:---:|:---:|
-| ![Dashboard](images/Dashboard.PNG) | ![Reviewer](images/Reviewer.PNG) |
-| **Flashcard Studio** | **TestForge** |
-| ![Flashcards](images/Flashcards.PNG) | ![TestForge](images/TestForge.PNG) |
-| **MemoryLoop** | **Progress Intelligence** |
-| ![MemoryLoop](images/MemoryLoop.PNG) | ![Progress](images/Progress.PNG) |
+### Overview
+<img src="images/Overview.PNG" width="90%" alt="MEMORA dashboard overview"/>
+
+*A learning command center: your next step, study goal, statistics, upcoming reviews, and recommendations.*
+
+<br/>
+
+### My Library
+<img src="images/My%20Library.PNG" width="90%" alt="MEMORA study library"/>
+
+*Every study set you create, organized in one place.*
+
+<br/>
+
+### Smart Reviewer
+<img src="images/Smart%20Reviewer.PNG" width="90%" alt="MEMORA Smart Reviewer"/>
+
+*A document-intelligence workspace with collapsible sections, key terms, and a study checklist.*
+
+<br/>
+
+### Mistake Notebook
+<img src="images/Mistake%20Notebook.PNG" width="90%" alt="MEMORA Mistake Notebook"/>
+
+*Every wrong answer collected with its explanation, ready to turn into a flashcard.*
+
+<br/>
+
+### Progress
+<img src="images/Progress.PNG" width="90%" alt="MEMORA progress analytics"/>
+
+*Accuracy trends, topic performance, and examination history.*
+
+<br/>
+
+### Ask MEMORA
+<img src="images/Ask%20Memora.PNG" width="90%" alt="MEMORA conversational study companion"/>
+
+*A study companion that answers using the study set you selected.*
 
 </div>
 
-## ✦ Features
+---
 
-- **Document-to-study workflow** — Extract text from PDF, DOCX, PPTX, and TXT files, or paste notes and prompts.
-- **Source-grounded AI generation** — Gemini generates reviewers, key terms, questions, and flashcards using supplied source material as the primary authority.
-- **Smart Reviewer** — Read structured study notes, definitions, and key points.
-- **Flashcard Studio** — Flip cards, navigate a deck, and rate recall.
-- **TestForge** — Multiple-choice and short-answer practice, question navigation, flagging, submission, scoring, and explanations.
-- **MemoryLoop** — SM-2-inspired scheduling based on recall ratings.
-- **Mistake Notebook** — Automatically collects incorrect examination answers and converts them into flashcards.
-- **Progress Intelligence** — Charts and summaries are derived from actual local activity; no sample analytics are presented as user data.
-- **Ask MEMORA** — Ask questions with the selected study set as context.
-- **Freemium-ready plan UI** — Free workspace and Pro preview; no simulated payment.
-- **Responsive premium interface** — Dark/light appearance, motion, and reduced-motion support.
+## 🚀 Features
 
-## ✦ Technology
+### 📊 1. Dashboard
+- A personalized greeting and a **"next step"** recommendation based on your real activity.
+- Study goal ring, learning statistics, and study streak.
+- Upcoming reviews, recent activity, and study recommendations.
+- Animated counters, charts, and progress indicators.
 
-| Layer | Tools |
-|---|---|
-| Frontend | React, TypeScript, Vite |
-| Styling & motion | Custom CSS, Framer Motion |
-| Icons | Lucide React |
-| Charts | Recharts |
-| Document parsing | PDF.js, Mammoth, JSZip |
-| Backend | Express, Zod |
-| AI | Google Gemini API (server-side) |
-| Database foundation | Supabase / PostgreSQL SQL schema |
-| Testing | Vitest |
+### 📚 2. Study Set Generation
+- Upload **PDF, DOCX, PPTX, or TXT** files, or write a topic or prompt.
+- Choose the number of questions and the difficulty.
+- Add custom instructions to focus the output.
+- Text is extracted in your browser before it is sent for generation.
 
-## ✦ Architecture
+### 📝 3. Smart Reviewer
+- Generated reviewer with **collapsible sections** and an expand/collapse-all control.
+- Key terms with definitions.
+- An animated **study checklist** with progress.
 
-```text
-Browser (React + TypeScript)
-  ├── Local workspace persistence (localStorage)
-  ├── PDF / DOCX / PPTX / TXT extraction
-  ├── Reviewer, flashcard and examination UI
-  └── /api requests
-          │
-          ▼
-Express API (server/index.ts)
-  ├── Input validation (Zod)
-  ├── Gemini API (server-only secret)
-  └── Structured JSON generation
-          │
-          ▼
-Supabase-ready PostgreSQL schema
-  ├── User-owned documents and study sets
-  ├── Flashcards and review schedules
-  └── Exams, answers, mistakes and usage quotas
+### 🃏 4. Flashcard Studio
+- **3D flip** animation with keyboard control (`Space`, arrows, `1`–`4`).
+- Rate recall as **Again, Hard, Good, or Easy**, and see each choice's next review interval.
+- Add your own cards.
+
+### 🎯 5. TestForge
+- A focused exam environment with a question navigator and **flag for review**.
+- Elapsed-time display and smooth question transitions.
+- Animated results with a topic breakdown and a full answer review.
+
+### 🔁 6. MemoryLoop
+- Spaced repetition with an **SM-2-inspired** scheduler.
+- Cards due today, mature and learning counts, and per-collection review progress.
+
+### 📓 7. Mistake Notebook
+- Every missed question with the correct answer and an explanation.
+- Convert a mistake into a flashcard in one click.
+
+### 📈 8. Progress Intelligence
+- Accuracy trend, exam time per day, topic performance, and exam history.
+
+### 💬 9. Ask MEMORA
+- A conversational study companion grounded in your selected study set.
+
+### 🎨 10. Premium Interface
+- Dark charcoal interface with violet and indigo accents, plus a light theme.
+- Page transitions, a sliding sidebar indicator, micro-interactions, and toasts.
+- Responsive layout with a mobile bottom navigation bar.
+- Accessible dialogs, keyboard shortcuts, visible focus states, and **reduced-motion support**.
+
+---
+
+## 🧰 Tech Stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=react,ts,vite,nodejs,express,vitest,supabase,postgres,git,github&theme=dark" alt="Tech stack icons" />
+
+</div>
+
+| Layer | Technology | Purpose |
+|---|---|---|
+| **Frontend** | React 18 + TypeScript | UI and type safety |
+| | Vite 6 | Dev server and build tooling |
+| | Framer Motion 11 | Animations and transitions |
+| | Recharts 2 | Charts and data visualization |
+| | Lucide React | Icons |
+| | Custom CSS design system | Dark/light themes via CSS variables, with no UI framework |
+| **Backend** | Node.js + Express 4 | API server |
+| | Zod | Request validation |
+| | CORS | Cross-origin handling |
+| **AI** | Google Gemini API | Study set generation and Ask MEMORA (default model `gemini-2.0-flash`) |
+| **Documents** | pdfjs-dist | PDF text extraction |
+| | Mammoth | DOCX text extraction |
+| | JSZip | PPTX text extraction |
+| **Storage** | Browser `localStorage` | Workspace persistence |
+| | Supabase / PostgreSQL schema | Optional foundation in `database/schema.sql`, not required to run |
+| **Tooling** | tsx, concurrently | Run the server and client together |
+| | Vitest | Unit tests |
+
+---
+
+## 🔬 How It Works
+
+```mermaid
+flowchart LR
+    A["Upload a file<br/>or write a prompt"] --> B["Browser extracts text<br/>PDF · DOCX · PPTX · TXT"]
+    B --> C["Express API<br/>/api/generate"]
+    C --> D["Gemini"]
+    D --> E["Study set<br/>Reviewer · Terms · Flashcards · Questions"]
+    E --> F[("Browser localStorage")]
+    F --> G["Flashcards · TestForge<br/>MemoryLoop · Progress"]
 ```
 
-## ✦ Interface Architecture
+### Spaced repetition
 
-All application state and logic stays in `src/App.tsx`. Everything visual is split into small, reusable modules:
+MEMORA's scheduler is **SM-2 inspired**:
 
-```text
-src/
-├── App.tsx              # state, handlers, routing between pages
-├── styles.css           # design tokens + component styles (dark / light)
-├── components/          # ui primitives, Shell (sidebar, topbar, bottom nav), Modals, charts
-├── pages/               # Dashboard, Library, Reviewer, Flashcards, TestForge,
-│                        # MemoryLoop, Mistakes, Insights, Ask, Settings
-└── lib/                 # motion variants, SM-2 scheduling (srs.ts), formatting, storage
-```
-
-**Motion:** one easing curve and shared variants live in `src/lib/motion.ts`. Every animation respects `prefers-reduced-motion` (`MotionConfig reducedMotion="user"` plus a CSS fallback).
-
-**Keyboard shortcuts**
-
-| Where | Keys |
+| Recall | Result |
 |---|---|
-| Anywhere | `Ctrl/Cmd + K` focuses search |
-| Flashcards | `Space` flip · `←` `→` navigate · `1`–`4` rate after flipping |
-| TestForge | `A`–`D` or `1`–`4` choose · `←` `→` navigate |
-| Dialogs | `Esc` closes · `Tab` stays inside |
+| **Again / Hard** | The card returns tomorrow and its repetition count resets |
+| **First good recall** | Reviewed again in **1 day** |
+| **Second good recall** | Reviewed again in **6 days** |
+| **After that** | The previous interval is multiplied by the card's **ease factor** (clamped between 1.3 and 2.8) |
 
-## ✦ Getting Started
+The scheduling logic lives in [`src/lib/srs.ts`](src/lib/srs.ts) and is covered by unit tests.
 
-### Requirements
+---
 
-- Node.js 20 or newer
-- npm
-- A Google Gemini API key for AI generation
+## 📦 Getting Started
+
+### Prerequisites
+
+- **Node.js 18+** (20+ recommended)
+- A **Google Gemini API key** for AI generation ([get one here](https://aistudio.google.com/app/apikey))
 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/memora.git
-cd memora
+git clone https://github.com/rheillunio2-byte/Memora.git
+cd Memora
 ```
 
 ### 2. Install dependencies
@@ -139,97 +229,175 @@ cd memora
 npm install
 ```
 
-### 3. Configure environment
+### 3. Configure environment variables
 
 ```bash
 cp .env.example .env
 ```
 
-Add your Gemini key to `.env`:
+Open `.env` and add your key:
 
 ```env
-GEMINI_API_KEY=your_gemini_api_key
-GEMINI_MODEL=gemini-2.0-flash
-PORT=8787
+GEMINI_API_KEY=your_key_here
 ```
 
-Never commit `.env`. The Gemini key is read by the Express server and is never included in frontend variables.
-
-### 4. Start development servers
+### 4. Run the app
 
 ```bash
 npm run dev
 ```
 
-- Vite frontend: `http://localhost:5173`
-- Express API: `http://localhost:8787`
+| Service | URL |
+|---|---|
+| Web app | http://localhost:5173 |
+| API | http://localhost:8787 |
+| Health check | http://localhost:8787/api/health |
 
-If PowerShell blocks `npm.ps1`, use `npm.cmd install` and `npm.cmd run dev`.
+The health check reports `aiConfigured: true` once your key is set. Without a key the interface still opens, but AI generation and Ask MEMORA will return an error.
 
-### 5. Build for production
-
-```bash
-npm run build
-npm test
-```
-
-## ✦ Supabase Setup
-
-The current app runs in local demo mode and persists study data in the browser. To move to multi-device accounts:
-
-1. Create a Supabase project.
-2. Open the SQL Editor.
-3. Run `database/schema.sql`.
-4. Configure Supabase Auth and a private Storage bucket.
-5. Add the Supabase URL and anon key to the frontend integration when implementing the account/data service.
-6. Keep service-role credentials server-side only.
-7. Review every RLS policy before production deployment.
-
-The included schema is a database foundation; Supabase authentication and cloud synchronization are not yet wired into this initial build.
-
-## ✦ Gemini Setup
-
-Create an API key in Google AI Studio and add it to `.env` as `GEMINI_API_KEY`. Restart the Express server after changing environment variables.
-
-The API validates request shape and length, uses server-side credentials, and returns a clear configuration error when the key is missing. AI generation has not been live-tested without a user-provided key.
-
-## ✦ Available Commands
+### Available scripts
 
 | Command | Description |
 |---|---|
-| `npm run dev` | Start Vite and Express |
-| `npm run dev:client` | Start frontend only |
-| `npm run dev:server` | Start API only |
-| `npm run build` | Type-check and build frontend |
-| `npm test` | Run unit tests |
-| `npm run preview` | Preview production build |
+| `npm run dev` | Start the client and server together |
+| `npm run dev:client` | Start only the Vite client |
+| `npm run dev:server` | Start only the API server |
+| `npm run build` | Type-check and build for production |
+| `npm run preview` | Preview the production build |
+| `npm start` | Run the API server |
+| `npm test` | Run the unit tests |
 
-## ✦ Known Limitations
+### Environment variables
 
-- Local demo mode stores data in the current browser; it is not multi-user cloud persistence.
-- Supabase SQL schema is included, but Auth, Storage, and cloud synchronization need integration.
-- Gemini features require a valid API key and network access.
-- OCR for scanned/image-only PDF pages is not implemented. Pages with little extractable text are explicitly flagged.
-- Source citations preserve page markers extracted from PDFs, but the initial UI does not provide a rendered PDF page viewer.
-- Payment processing is intentionally not simulated. Pro is a preview only.
-- The current practice engine includes multiple-choice and short-answer style input; the schema supports additional question formats for future expansion.
+| Variable | Required | Description |
+|---|---|---|
+| `GEMINI_API_KEY` | For AI features | Google Gemini API key. **Server-side only. Never prefix it with `VITE_`.** |
+| `GEMINI_MODEL` | No | Gemini model name (default `gemini-2.0-flash`) |
+| `PORT` | No | API port (default `8787`) |
+| `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | No | Reserved for the optional Supabase foundation |
 
-## ✦ Roadmap
+---
 
-- [ ] Supabase Auth, Storage, and synchronized user data
-- [ ] PDF page viewer with clickable source references
-- [ ] OCR for scanned documents
-- [ ] Matching, enumeration, and true/false examination builders
-- [ ] Timed exams and custom test configuration
-- [ ] PDF reviewer export
-- [ ] Server-enforced Free plan quotas
-- [ ] Verified subscription provider integration
-- [ ] End-to-end and accessibility testing
+## ⌨️ Keyboard Shortcuts
 
-## ✦ Contributing
+| Where | Keys |
+|---|---|
+| Anywhere | `Ctrl/Cmd + K` focuses search |
+| Flashcards | `Space` flip · `←` `→` navigate · `1`–`4` rate after flipping |
+| TestForge | `A`–`D` or `1`–`4` choose an answer · `←` `→` navigate |
+| Dialogs | `Esc` closes · `Tab` stays inside the dialog |
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a pull request.
+---
 
-## ✦ License
+## 📂 Project Structure
 
-Distributed under the MIT License. See [LICENSE](LICENSE).
+```text
+Memora/
+│
+├── src/
+│   ├── App.tsx              # State, handlers, and page routing
+│   ├── main.tsx             # Entry point (reduced-motion aware)
+│   ├── styles.css           # Design tokens and component styles
+│   ├── types.ts
+│   ├── components/          # UI primitives, shell, modals, charts
+│   ├── pages/               # Dashboard, Library, Reviewer, Flashcards,
+│   │                        # TestForge, MemoryLoop, Mistakes, Insights,
+│   │                        # Ask, Settings
+│   ├── lib/                 # motion variants, SM-2 scheduler, formatting, storage
+│   └── services/            # document extraction and AI requests
+│
+├── server/
+│   └── index.ts             # Express API (Gemini proxy)
+│
+├── database/
+│   └── schema.sql           # Optional Supabase / PostgreSQL foundation
+│
+├── tests/                   # Vitest unit tests
+├── public/                  # Logo and static assets
+├── images/                  # README screenshots
+│
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── .env.example
+```
+
+---
+
+## 🔒 Privacy and Security
+
+- Your Gemini API key stays on the **server** and is never exposed to the browser.
+- Study sets, results, and settings are stored in **your browser** (`localStorage`).
+- When you generate a study set or ask a question, the relevant source text is sent to the Gemini API through the MEMORA server.
+- Never commit your `.env` file.
+
+---
+
+## ⚠️ Known Limitations
+
+MEMORA is a prototype. Please be aware of the current limits:
+
+- **No accounts or cloud sync.** Data lives in one browser, and clearing site data removes it.
+- **AI output can be wrong.** Verify important information against your original materials.
+- **Study streak** is displayed but is not updated yet.
+- **Daily goal** counts cumulative study minutes rather than resetting each day.
+- **MemoryLoop** opens the full deck of a collection, not only the due cards.
+- **MEMORA Pro** is a preview. No payments or limits are enforced.
+- The **Supabase schema** is a foundation and is not connected to the app.
+
+---
+
+## 🗺️ Future Improvements
+
+- [ ] Track the daily study streak automatically.
+- [ ] Review only the cards that are due.
+- [ ] Reset the daily goal each day.
+- [ ] User accounts and cloud sync with Supabase.
+- [ ] Study set import and export.
+- [ ] Additional exam modes, including timed exams.
+- [ ] More languages and expanded accessibility testing.
+
+These are possibilities, not features of the current version.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) first.
+
+1. Fork the repository.
+2. Create a branch.
+3. Make and test your changes.
+4. Open a pull request.
+
+---
+
+## 📄 License
+
+MEMORA is distributed under the **MIT License**.
+
+See the [LICENSE](https://github.com/rheillunio2-byte/Memora?tab=MIT-1-ov-file) file for more information.
+
+---
+
+## 👨‍💻 Developer
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-@rheillunio2--byte-181717?style=for-the-badge&logo=github)](https://github.com/rheillunio2-byte)
+
+[Visit the Repository](https://github.com/rheillunio2-byte/Memora)
+
+</div>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:58D6DF,50:6D63E8,100:0B0C10&height=170&section=footer&text=Learn%20smarter.%20Remember%20longer.&fontSize=26&fontColor=ECECF4&animation=twinkling&fontAlignY=65" width="100%" alt="footer"/>
+
+**UNDERSTAND • PRACTICE • REMEMBER • MASTER**
+
+⭐ If MEMORA helps you study, consider giving the repository a star!
+
+</div>
