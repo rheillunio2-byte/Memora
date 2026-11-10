@@ -1,0 +1,6 @@
+export type Page = "dashboard"|"library"|"reviewer"|"flashcards"|"testforge"|"memoryloop"|"mistakes"|"insights"|"ask"|"settings";
+export type StudyQuestion = { id:string; type:"multiple-choice"|"true-false"|"identification"|"short-answer"; question:string; choices?:string[]; answer:string; explanation:string; topic:string; difficulty:string; source?:string; supported:boolean };
+export type Flashcard = { id:string; front:string; back:string; topic:string; dueAt:number; interval:number; ease:number; reps:number; status:"new"|"learning"|"review" };
+export type StudySet = { id:string; title:string; subject:string; sourceName:string; sourceText:string; createdAt:number; reviewer:string; terms:{term:string;definition:string}[]; questions:StudyQuestion[]; cards:Flashcard[]; completedTopics:string[] };
+export type Attempt = { id:string; setId:string; title:string; score:number; total:number; date:number; topicScores:Record<string,{correct:number;total:number}>; duration:number; mistakes:StudyQuestion[] };
+export type AppData = { sets:StudySet[]; attempts:Attempt[]; notes:Record<string,string>; dailyGoal:number; studyMinutes:number; streak:number; lastStudyDate:string; plan:"free"|"pro"; name?:string };
